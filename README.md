@@ -1,1 +1,2 @@
-# PortfolioDEMO2024
+# 作品演示網站
+此網站為個人以過去的作品為素材，所練習製作出來的的演示網站，使用Html、css、javascript。
