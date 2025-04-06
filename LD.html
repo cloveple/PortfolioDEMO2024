@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel= "stylesheet" href= "css/allstyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/tooshort.js"></script>
+    <script src="js/modcard.js"></script>
+    <script src="js/all.js"></script>
+
+
+    <style>
+         
+
+
+        /* 大圖 */
+        .aaacon{
+            position: relative;
+        }
+        .aaa{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            position: static;
+            z-index: 1;
+        }
+
+        
+
+        /* 移除超連結底線 */
+        a{text-decoration: none;}
+        a:hover{text-decoration: none;}
+
+
+
+
+    </style>
+</head>
+
+<body class="myfont">
+<!-- 標頭 -->
+ 
+<div class="title myfont">
+      <div class="titlebar" id="topbo">
+        <a href="LD.html" class="titleicon" style="margin-left: 3%;"id="abc" ><img src="img/icon.png" width="35px" height="42px"><br>Green life bulb</a>
+        <a href="#callme" id="csme" class="titlebarbo" style="margin-right: 8%;">聯絡我<br>contact us</a>
+        <a href="apptest.html" class="titlebarbo">app體驗<br>app test</a>
+        <a href="PInfo.html" class="titlebarbo">產品資訊<br>product info</a>
+        <a href="LD.html" class="titlebarbo">主頁<br>main page</a>
+      </div>
+  </div>
+
+
+<!-- 主視覺圖 -->
+<div class="myfont aaacon">
+    <img src="img/主視覺.png" class="aaa">
+    <a href="PInfo.html" class="btn1" id="butn1">了解更多</a>
+</div>
+
+
+<!-- 第一層圖 -->
+<div style="margin: 7%;" class="myfont">
+  <div style="height: 150px;">
+    <p style="font-size: 13pt;">關於Green life bulb</p>
+    <p style="font-size: 18pt; margin-top: 30px; letter-spacing:0.4em;"><b>當植栽與家具結合</b></p>
+  </div>
+
+  <div style="display: flex;"class="an1">
+    <img src="img/主頁-家具.jpg" class="mid1img">
+      <div  style="margin-right: 3%;margin-left: 5%;">
+      <p style="font-size: 40px; color:darkcyan; text-align:right;margin-right: 5%;margin-left: 5%;letter-spacing:0.2em;">家具</p>
+      <p class="cfont1" >
+        
+       <b>「有沒有辦法將其他生態養殖相關的東西如家飾品或家具一樣融入生活環境，減少養殖空間，也無違和或不便呢？」</b>
+       <br>
+       溯源至最初考量的是家中水族箱的占地浪費和換水的問題，在尋找不用換水也能調節水中氯的解答的時候找到了「魚菜共生」。
+       <br>逐漸審視到他不只是我尋求問題的解答，他的循環結構同時具有寓教性（共生系統）、賞玩（養魚及採集的體驗）的功能。
+      </p>
+    </div>
+           
+  </div>
+
+
+  <div style="height: 150px;"> </div>
+  
+  <div style="display: flex;"class="an3">
+    <div  style="margin-right: 4%;margin-left: 3%;">
+      <p style="font-size: 40px; color:darkgreen; text-align:left;margin-right: 5%;margin-left: 3%;letter-spacing:0.2em;">植栽</p>
+      <p class="cfont1">
+         我想將一份現有的生態養殖系統藉由家具帶進家中。利用與家具的結合讓那份生態系統自然的走進人們的生活空間。
+         <br>
+         我希望將這份技術與現有的家居品（家具）進行結合，除了達到節省空間的目的外，也將此藉由日常用品與人的生活達到自然融和。
+         <br>以水耕為雛型，雖然最開始主要用於大型漁產養殖，但其益處逐漸也有人開始著手於將之應用在居養上。
+      </p>
+    </div>
+    <img src="img/主頁-菜.jpg" class="mid1img" style="float: right;">
+  </div>
+
+</div>
+<!-- 第二層圖 -->
+<div style="height: 700px; margin: 7%; ">
+  <div style="height: 30px;"></div>
+  <div style="height: 150px;text-align :center;">
+    <p style="font-size: 18pt; margin-top: 40px; letter-spacing:0.4em;"><b>什麼是魚菜共生？</b></p>
+  </div>
+  <div>
+    
+    <img src="img/主頁-魚菜.jpg" style="width: 60%; position: absolute; z-index: 1;" id="tos2">
+    <div style="margin-right: 4%;margin-left: 10%; width: 20%; float: right;z-index: 0;"id="tos1">
+      <p class="cfont1 an2">
+        魚菜共生（Aquaponics），水生動物的排泄物與有機質分解過濾成植物可吸收的硝酸鹽後供應給飼養箱上的蔬菜，同時蔬菜的根系把系統內的水淨化供給水生動物使用，結合水產養殖與水耕栽培的互利共生生態系統(wiki)。
+        
+
+      </p>
+      
+      <button class="btn2" style="float: right; margin-right: 5%; margin-top: 3%;"><span>了解更多</span></button>
+    </div>
+    
+  </div>
+  
+</div>
+<!-- 第三層圖 -->
+
+<div style="height: 800px; background-color: whitesmoke;">
+
+  <!-- 模板 -->
+
+<div class="boxa">
+  
+  <div class="list1">
+    <p style="font-size: 16pt; margin-top: 30px; letter-spacing:0.2em;margin-bottom: 8%;color:darkslategray;"><b>有哪些植物適合被該產品栽種？</b></p>
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜1.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>蔥</b></p>
+        <p class="cardword">蔥之類的，例圖非當事青菜，請假裝他是。</p>
+        </div>
+      </div>
+
+     
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜2.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 15%;margin-bottom: -5%; "><b>寶貝生菜</b></p>
+        <p class="cardword">你不能因為他長得不像生菜就不承認他是生菜。</p>
+        </div>
+      </div>
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜3.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>香草</b></p>
+        <p class="cardword">例圖非香草，他已經很努力長得像香草了。</p>
+        </div>
+      </div>
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜4.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 20%;margin-bottom: -5%; "><b>芝麻葉</b></p>
+        <p class="cardword">芝麻葉之類的，例圖非當事青菜，請假裝他是。</p>
+        </div>
+      </div>
+
+     
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜5.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>薄荷</b></p>
+        <p class="cardword">圖片非當事蔬菜，反正都是綠的，我至少沒說他是番茄。</p>
+        </div>
+      </div>
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜6.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>香菜</b></p>
+        <p class="cardword">非當事香菜，例圖不像也沒關係，反正都會被挑掉。</p>
+        </div>
+      </div>
+
+      <!-- 重複 -->
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜1.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>蔥</b></p>
+        <p class="cardword">蔥之類的，例圖非當事青菜，請假裝他是。</p>
+        </div>
+      </div>
+
+     
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜2.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>萵苣</b></p>
+        <p class="cardword">你不能因為他長得不像萵苣就不承認他是萵苣。</p>
+        </div>
+      </div>
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜3.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>香草</b></p>
+        <p class="cardword">例圖非香草，他已經很努力長得像香草了。</p>
+        </div>
+      </div>
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜4.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 20%;margin-bottom: -5%; "><b>芝麻葉</b></p>
+        <p class="cardword">芝麻葉之類的，例圖非當事青菜，請假裝他是。</p>
+        </div>
+      </div>
+
+     
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜5.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>薄荷</b></p>
+        <p class="cardword">圖片非當事蔬菜，反正都是綠的，我至少沒說他是番茄。</p>
+        </div>
+      </div>
+
+      <div class="pho1 card1">
+        <div>
+        <img src="img/主頁-菜6.jpg">
+        <br>
+        <p class="cardword" style="font-size: 18pt; margin-left: 25%;margin-bottom: -5%; "><b>香菜</b></p>
+        <p class="cardword">非當事香菜，例圖不像也沒關係，反正都會被挑掉。</p>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- 結束 -->
+
+</div>
+
+
+<!-- 第四段 -->
+<div id="callme" style="height: 70px;">
+</div>
+<div id="callme" style="height: 500px; margin-left: 15%;">
+  <p style="font-size: 18pt; margin-top: 20px; letter-spacing:0.4em;"><b>聯絡我</b></p>
+
+  <div class="formt myfont">
+
+  <br>
+  <div style="width: 50%;float:right;margin-right: 0%;padding: 0%,10%,0%;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706783.365173116!2d117.23621793821316!3d24.86707250190843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346bb47539a87233%3A0x29c950f9afbe8d0c!2z5Y-w54Gj5rW35bO9!5e0!3m2!1szh-TW!2stw!4v1734315053340!5m2!1szh-TW!2stw"  style="border:0; margin-top: -10%;"  height="250px" width="300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <form>
+  <div class="input">
+     姓名 
+       <input type="text" id="callmea1" class="formin" placeholder="請輸入姓名"><br>
+       電話
+        <input type="tel"  id="callmea2" class="formin" placeholder="09xxxxxx"><br>
+       聯絡方式
+       <input type="email" id="callmea3" class="formin" placeholder="電話或電子信箱"><br>
+       希望回覆日期
+      <input type="date" id="callmea4" class="formin" placeholder="請輸入會面日期"><br>
+      </div>
+      <br>
+      <a href="javascript:" onclick="callme6.style.display=callme6.style.display=='none'?'':'none'" id="callme5" class="btn3" value="btnck" style="margin-top: 100px; width: 50%; ">送出</a>
+      <div id="callme6" style="display: none; margin-top: 20px;color:dodgerblue">已收到表單，我們會盡快聯繫您。</div>
+    </div>
+  </form>
+</div>
+
+<!-- <script>
+var cl5 = document.querySelector("#callme5");
+var cl6 = document.querySelector("#callme6");
+  cl5.onclick = function(){
+      cl6.visibliliy=visible;
+  }</script> -->
+
+
+
+
+<!-- 頁尾 -->
+<footer style="height: 100px; background-color:rgb(201, 201, 201);font-size: 0.8em;" class="myfont">
+  <div style="float: right;margin-left: 30%; margin-top: 3%; margin-bottom: 3%;">
+    © 2024 cloveripple not inc
+    <img style="width: 5%; margin-right: 0.5%; margin-left: 4%;" src="img/iconfb.png">qwerty123
+    <img style="width: 5%;margin-right: 0.5%; margin-left:4%;" src="img/iconplurk.png">asdfgh456
+    <img style="width: 5%;margin-right: 0.5%; margin-left: 4%;" src="img/iconx.png">zxcvb789
+  </div>
+</footer>
+
+<!-- icon謝謝flaticon的freepik, fauzin idea,Roundicons,khulqi Rosyid  -->
+
+
+ 
+<!-- 測欄 -->
+<div id="rightmenuhide" class="rightmenuhide"><a href="javascript:" onclick="menu1.style.display=menu1.style.display=='none'?'':'none'"class="ricon" ><img src="img/menuicon.png" width="35px" height="42px"></a></div>
+
+<div id=menu1 style="background-color: rgb(182, 244, 198);display: none;" class="myfont">
+
+  <div class="rightmeau"><a href="LD.html" style="width: 10%;margin-bottom: 15%; color: #000;">主頁<br>main page</a></div>
+  <div class="rightmeau"> <a href="PInfo.html" style="width: 10%;margin-bottom: 15%; color: #000;">產品資訊<br>product info</a></div>
+  <div class="rightmeau"> <a href="apptest.html" style="width: 10%;margin-bottom: 15%; color: #000;">app體驗<br>app test</a></div>
+  <div class="rightmeau"> <a href="#callme" style="width: 10%; margin-bottom: 15%; color: #000;">聯絡我<br>contact us</a></div>
+</div>
+
+<!-- 聯絡我展開
+
+<div id=csdn style="background-color:aquamarine;z-index: 0;" class="myfont">
+
+  <div class="csdn1"><a href="#" style="margin-bottom: 15%; color: #000; ">拜託不要</a></div>
+</div> -->
+
+<div class="myfont" id="warn" style="z-index: 6; top: 50%;margin-left: 30%; width: 40%; height: 10em;background-color:rgb(255, 255, 255); position:fixed;border:2px solid #000">
+  <div style="padding: 5%; font-size: 20pt;">
+  <div>此為作品演示用，非正式網站</div>
+  <d>
+  </div>
+  <div style="margin-right: 0%; margin-left: 0%; margin-top: 5%; background-color: black;">
+    <a href="javascript:" onclick="warn.style.display=warn.style.display=='none'?'':'none'"  style="font-size: 20px;  margin-top: 5%; width: 30%; margin-left: 30%;  color:white;">我知道</a>
+  </div>
+</div>
+
+
+
+</body>
+</html>

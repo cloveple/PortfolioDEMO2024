@@ -1,0 +1,491 @@
+
+@charset"UTF-8";
+@font-face {font-family: 'jf-openhuninn-2.1';
+    src: url('../ttf/jf-openhuninn-2.1.woff') format('woff');
+    }
+
+    .myfont {
+        font-family: 'jf-openhuninn-2.1';
+    }
+
+
+    .title{
+        height: 95px;
+        background-color: white;
+        /* 固定頁首 */
+        position:fixed;width:100%;z-index:2;top:0;
+    }
+    /* 頁籤 */
+    .titlebar{
+        width:100%;overflow:hidden;
+        display:inline-block;
+        white-space:normal;
+    }
+    .titlebarbo:hover{
+        border-bottom:5px solid;
+        border-bottom-color:aquamarine;
+        color:cadetblue;
+        
+    }
+    .titlebarbo{
+        font-size: 15px;
+        color: black;
+        display:block;text-align:left;border:none;white-space:normal;
+        text-align:center;
+        margin-left: 3%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding:1em 4% 1em;float:right;width:auto;outline:0;
+    }
+    .titleicon{
+        font-size: 10px;
+        color: black;
+        display:block;text-align:left;border:none;white-space:normal;
+        text-align:center;
+        margin-left: 2em;
+        padding:2em 0.7em;float:left;width:auto;outline:0;
+        object-fit: contain;
+    }
+    .titleicon:hover{
+        color:black;
+    }
+    .drop:hover{
+        display:block;
+        cursor:auto;color:#000;background-color:#fff;
+        position:absolute;min-width:160px;margin:0;padding:0;z-index:2;
+        min-width:100%;
+        box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+    }
+    /* 置中（第一個寬，第二個高）*/
+
+    .wmiddle {
+        display: flex;
+        justify-content: center;           
+    }
+    .hmiddle {
+        display: flex;
+        align-items: center;        
+    }
+
+
+
+    /* 按鈕 */
+    .btn1{
+        object-fit: contain;
+        display: inline-block;
+        border:3px solid;
+        border-radius: .5rem;
+        border-color: black;
+        color: black;
+        position: absolute;
+        text-align:center;
+
+        width: 12em;
+        height: 2.5em;
+        top: 73%; 
+        left: 11%; 
+        padding:5px;
+        z-index: 1;
+        font-size: 18px;
+    }
+    .btn1:hover{
+        background:#ffffffd8;
+        color:cornflowerblue;
+        transform: translateY(-3px);
+        box-shadow: 0 .3rem 0 gray;
+    }
+
+    
+    .btn2 {
+        position: relative;
+        min-width: 7%;
+        background: transparent;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.2em 2em 2em;
+    }
+    .btn2 span {
+        color: #FFFFFF;
+        mix-blend-mode: difference;
+    }
+    .btn2:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3%;
+        height: 50%;
+        border-radius: 50px;
+        background: black;
+        transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation: fade 1s linear 0s infinite;
+    }
+    .btn2:hover:before {
+      background: black;
+      width: 100%;
+      animation: fade;animation: iteration count 0;
+    }
+
+    /* 第某層圖 */
+    .mid1img{
+        width: 50%;
+      }
+    
+     /* 文字樣式 */
+    .cfont1{
+        font-size: 12pt;
+        letter-spacing:0.1em;
+        line-height:2em;
+        word-break: break-all;
+    }
+
+    /* 淡入 */
+    .an1{
+        opacity: 0;
+        animation: fade 2s linear 0s infinite;
+        animation-delay: 3.5s;
+        animation-iteration-count:1;
+        opacity: 1;
+        
+    }
+    .an2{
+        animation: leftIn 0.5s linear 0s infinite;
+        animation-delay: 4.5s;
+        animation-iteration-count:1;
+    }
+    .an3{
+        opacity: 0;
+        animation: fade 2s linear 0s infinite;
+        animation-delay: 3.5s;
+        animation-iteration-count:1;
+        opacity: 1;
+    }
+    .an4{
+        opacity: 0;
+        animation: fade 2s linear 0s infinite;
+        
+        animation-iteration-count:1;
+        opacity: 1;
+        
+    }
+    .an5{
+        
+        animation: rightIn 0.5s linear 0s infinite;
+        animation-delay: 4.5s;
+        animation-iteration-count:1;
+    
+    }
+    .an6{
+        animation: downIn 0.5s linear 0s infinite;
+        animation-delay: 4s;
+        animation-iteration-count:1;
+        animation-fill-mode: forwards;
+        
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    /* 旋轉動畫 */
+    .roimg:active{
+        animation:rotateimg 2s;
+        animation-iteration-count:1;
+    }
+   
+    @keyframes rotateimg {
+        0%{transform:rotate(0deg);}
+        100%{transform:rotate(180deg);}
+    }
+
+    /* 左入 */
+    @keyframes rightIn {
+        from {
+            transform: translate3d(50%, 0, 0);
+        }
+    
+        to {
+            transform: none;
+        }
+    }
+    @keyframes leftIn {
+        from {
+            transform: translate3d(-100%, 0, 0);
+        }
+    
+        to {
+            transform: none;
+        }
+    }
+    @keyframes downIn {
+        from {
+            transform:scaleY(1);
+        }
+    
+        to {
+            transform:scaleY(0);
+        }
+    }
+
+
+    /* 打字動畫 */
+    @keyframes typing {from { width: 0 }}
+
+    .cfont2 {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(1);
+        font-size: 12pt;
+        letter-spacing:0.1em;
+        line-height:2em;
+    }
+
+    /* 幻燈卡片模板css */
+    .boxa{
+        padding: 5% 0% 0%;
+        width: 100%;
+        height: 700px;
+        overflow:hidden;
+    }
+    .list1{
+        margin: 1;
+        margin-left: 10%;
+    }
+    .pho1{
+        width: 25%;
+        max-width: 275px;
+        height: 700px;
+        font-size: 3.5rem;
+        margin-right: 5%;
+        display: flex;
+        float: left;
+    }
+    .card1{
+        max-width: 275px;
+        background-color: white;
+    }
+    .card1 div img{
+        width: 100%;
+        height: 5.5em;
+        object-fit: cover;
+        
+    }
+    .cardword{
+        padding: 2% 15% 2%;
+        font-size: 12pt;
+        
+    }
+    .local{
+        top: 420px;
+        position: absolute;
+        left: 45%;
+    }
+
+    .btn3,
+    .btn3:focus {
+        position: relative;
+        min-width: 200px;
+        background-color: black;
+        border-radius: 4em;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition-duration: 0.4s;
+        padding: 10px 20px;
+    }
+    .btn3:hover {
+        background-color: #3A3A3A;
+        color: white;
+        transition-duration: 0.1s;
+    }
+    .btn3:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        box-shadow: 0 0 10px 40px white;
+        border-radius: 4em;
+    }
+
+
+    .formin{
+        margin-top: 10px;
+    }
+
+    /* 右側欄 */
+    #menu1 {position: fixed;right: 0;top: 28%;width: 8em;margin-top: -5em;z-index: 5;}
+
+    .rightmeau{
+      margin-bottom: 15%; padding: 8%;
+
+    }
+    .rightmeau:hover{background-color: beige;}
+    .ricon{
+        right: 0;top: 5%;
+        margin-right: 2em;
+        float:right;width:auto;outline:0;
+        z-index: 5;
+        position: fixed;
+    }
+    .rightmenuhide{
+        visibility:hidden;
+    }
+    
+    @media screen and (max-width:880px){
+        .titlebarbo{
+            visibility: hidden;
+            font-size: 15px;
+            color: black;
+            display:block;text-align:left;border:none;white-space:normal;
+            text-align:center;
+            margin-left: 3%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding:1em 4% 1em;float:right;width:auto;outline:0;
+        }
+
+        .rightmenuhide{
+            visibility: visible;
+        }
+        .btn1{
+            object-fit: contain;
+            display: inline-block;
+            border:3px solid;
+            border-radius: .5rem;
+            border-color: black;
+            color: black;
+            position: absolute;
+            text-align:center;
+    
+            width: 100px;
+            height: 30px;
+            top: 73%; 
+            left: 11%; 
+            padding:5px;
+            z-index: 1;
+            font-size: 10px;
+        }
+
+    }
+    @media screen and (min-width:880px){
+        .titlebarbo{
+            visibility: visible;
+            font-size: 15px;
+            color: black;
+            display:block;text-align:left;border:none;white-space:normal;
+            text-align:center;
+            margin-left: 3%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding:1em 4% 1em;float:right;width:auto;outline:0;
+        }
+
+        .rightmenuhide{
+            visibility: hidden;
+        }
+
+        .btn1{
+            object-fit: contain;
+            display: inline-block;
+            border:3px solid;
+            border-radius: .5rem;
+            border-color: black;
+            color: black;
+            position: absolute;
+            text-align:center;
+    
+            width: 12em;
+            height: 2.5em;
+            top: 73%; 
+            left: 11%; 
+            padding:5px;
+            z-index: 1;
+            font-size: 18px;
+        }
+
+    }
+
+    /* 背景圖 */
+
+    .bg2 {
+        z-index: -9;position:static;
+        object-fit: none;
+    }
+
+    .tt{
+        width: 30%;
+    }
+
+    .tt:hover{
+        opacity: 0.5;
+    }
+
+    .pibtn1{
+        
+        margin-right: 5%
+    }
+    .pibtn1:active{
+        top: -1em;
+    }
+
+    .tryfly{
+        
+            object-fit: contain;
+            display: inline-block;
+      
+            position: absolute;
+            text-align:center;
+    
+            
+            top: 50%; 
+            left: 50%; 
+            padding:5px;
+            z-index: 1;
+        
+    }
+
+ 
+    
+    /* 聯絡我 */
+    /* #csdn {position: fixed;right: 8%;top: 28%;width: 14%;margin-top: -5em;z-index: 5;visibility: hidden;}
+
+    .csdn1{
+      padding: 10%;
+      font-size: 15px;
+      color: black;
+      display:block;text-align:left;border:none;white-space:normal;
+      text-align:center;
+      float:right;width:auto;outline:0;
+      
+
+    }
+    .csdn:hover{visibility: visible;} */
+
+  /* 背景圖 */
+
+  
